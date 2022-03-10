@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+    </head>
+    <body>
+        
+        <form action="" method="GET" style="background-image: linear-gradient(to bottom, #2fb383, #18a86b);"> <!-- form: Ambiente de formularios (NÃO deve ser aninhado com outro form). Atributos: action: pra onde será enviado, method: (GET: dados expostos, POST: dados escondidos). -->
+            
+            <fieldset name="inputs-contact"> <!-- Agrupa campos que tem o mesmo propósito é interpretado pelos leitores de tela (acessibilidade). Atributos: disable: desabilita elementos internos ao fieldset, form: linka com o id de um formulario, name: nome do grupo relacionado ao legend-->
+                <legend>Entre em contato</legend> <!-- Nome do agrupamento e primeiro elemento de um fieldset-->
+
+                <label for="assunto"> <!--Identifica entrada de dados do input, são conectados pelos atributos "for" e "id"-->
+                    <strong>Assunto:</strong> <!--Label "Assunto:"-->
+                    <input type="text" list="depart" name="assunto" id="" placeholder="Escolha na lista um assunto" required> <!--Caixa de entrada de dados do label "Assunto:"-->
+                    <datalist id="depart"> <!--Lista de dados para o input list="depart"-->
+                        <option>ABRIR UM CHAMADO</option>
+                        <option>SUPORTE TÉCNICO</option>
+                        <option>PEDIDO EM ATRASO</option>
+                        <option>PRODUTO COM DEFEITO</option>
+                        <option>OUTROS</option>
+                    </datalist>
+                </label>
+
+                <br>
+                <br>
+                
+                <!-- Input para "Nome Completo" -->
+                <label for="nome"> 
+                    <strong>Nome Completo</strong><!--Título da caixa de dados "Nome Completo:"-->
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required> <!--Entrada de dados "Nome Completo:"-->
+                </label>
+
+                <br>
+                <br>
+
+                <!-- Input para "Email" -->
+                <label for="email">
+                    <strong>Email</strong><!--Título da caixa "Email"-->
+                    <input type="email" id="email" placeholder="seu@email.com" name="email" required>                   
+                </label>
+
+                <br>
+                <br>
+
+                <label for="text-box">
+                    <strong>Mensagem:</strong>
+                    <br>
+                    <textarea name="text-box" id="text-box" cols="30" rows="10" maxlength="250" placeholder="Máximo de 250 carcteres"></textarea>       
+               
+                </label>
+
+                
+
+                <br>
+                <br>
+
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Desejo receber notificações por email</label>
+                
+
+                <br>
+                <br>
+                <br> 
+
+                <button type="submit">Enviar</button> 
+            </fieldset>
+           
+        </form>
+        
+    </body>
+</html>

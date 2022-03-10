@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*paleta de cores*/
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+/*fonts*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: var(--body-background);
+    
+}
+
+
+/*****HEADER********/
+header {
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;       
+}
+.main-grid{
+    width: 88.7%;
+}
+
+#nav-bar {    
+    height: 50px;
+    margin: 57px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner {    
+    height: 246px;
+    /* border: blue solid  1px; */
+    margin: 90px auto 0;
+
+}
+
+#galery {    
+    height: 456.4px;
+    border: blueviolet solid 1px;
+    margin: 100px auto 0;
+    
+}
+
+
+/******NAVIGATIOnN-MENU**********/
+#brand-logo{
+    width: 265px;
+    height: 43px;
+    background-image: url(./assets/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+#menu-list {
+    width: 341px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color); 
+}
+a:hover {
+    color: var(--color-logo);
+    transition: .3s;
+}
+
+#btn-wallet {
+    width: 230px;
+    height: 50px;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .9em;    
+}
+button:hover {
+    background-color: var(--color-logo);
+    color: var(--text-color);
+    transition: .4s;
+}
+
+/*****BANNER*****/
+#banner {
+    display: flex;
+    align-items: center;
+}
+
+h1#title-page{
+    color: var(--text-color);
+    width: 596px;
+    margin: 0 auto;
+    font-size: 2.8em;
+}
+#hg-text {
+    color: var(--color-logo);    
+}
+
+#info-box {
+    width: 401px;
+    height: auto;
+    color: var(--text-color);
+}
+
+#galery > img {
+    width:25%;
+}
+
+#galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+
+  

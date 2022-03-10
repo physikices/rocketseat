@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    MathJax = {
+        loader: {
+        load: [
+            'input/tex-base', '[tex]/newcommand', '[tex]/action',
+            'output/chtml'
+        ]
+        },
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        packages: ['base', 'newcommand', 'action']
+        }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Quiz - Mecânica Clássica</h2>
+        <hr>
+    </div>
+    <form action="">
+        <!-- Questão-1 -->
+        <p><strong>1. Do que diz respeito a primeira Lei de Newton?</strong></p>
+        <div>
+            
+            <!-- Atributo "for" do label conecta ao atributo "id" do input -->
+            <label for="question-1a">
+                <!-- Atributo "name" agrupa os imputs de uma mesma questão, permitindo que apnas um radio-button seja selecionado por questão, atributo "value" indica qual radio-button foi selecionado no grupo-->
+                <input type="radio" id="question-1a" name="question-1" value="A">
+                a) Da incapacidade de dois corpos ocuparem o mesmo lugar no espaço.
+            </label>
+        </div>
+        <div>
+            <label for="question-1b">
+                <input type="radio" id="question-1b" name="question-1" value="B">
+                b) De que matéria atrai matéria na proporção direta de suas respectivas massas e no quadrado inversos de suas distâncias.
+            </label>
+        </div>
+        <div>
+            <label for="question-1c">
+                <input type="radio" id="question-1c" name="question-1" value="C">
+                c) Estabelece uma classe de referencial, no qual é possível analisar o movimento de corpos cujo as taxas de deslocamento no tempo são sempre as mesmas.
+            </label>
+        </div>  
+        <div>
+            <label for="question-1d">
+                <input type="radio" id="question-1d" name="question-1" value="D">
+                d) De que a somatória das forças que agem sobre um corpo é nula \(\vec{F} = 0\).
+            </label>
+        </div><!--Q1-->
+
+        <!-- Questão-2 -->
+        <div id="div-question-2">
+            <p><strong>2. Dada uma partícula de massa <em>M</em> em órbita circular em torno de um
+                centro de força gravitacional, gerado por uma partícula de massa <em>m</em>, é correta afirmar que a energia potencial do sistema é:</strong></p>
+            <div>
+                <label for="question-2a">
+                    <input type="radio" id="question-2a" name="question-2" value="A">
+                    a) $$U = {G \frac{Mm}{r^{2}}}$$
+                </label>
+            </div>
+            <div>
+                <label for="question-2b">
+                    <input type="radio" id="question-2b" name="question-2" value="B">
+                    b) $$U = -{G \frac{Mm}{r}}$$
+                </label>
+            </div>
+            <div>
+                <label for="question-2c">
+                    <input type="radio" id="question-2c" name="question-2" value="C">
+                    c) $$U = -{G \frac{Mm}{R+h}}$$
+                </label>
+            </div>
+            <div>
+                <label for="question-2d">
+                    <input type="radio" id="question-2d" name="question-2" value="D">
+                    d) $$U = -{G \sqrt{mgh} + \frac{1}{2} \left(\frac{M}{R-h}\right)}$$
+                </label>
+            </div>
+        </div><!--end-Q2-->
+        
+
+        <!-- Questão-3 -->        
+        <div id="div-question-3">
+            <p><strong>3. Na superfície de um planeta de massa <em>M</em>, um pêndulo simples de comprimento <em>L</em> tem período <em>T</em> duas vezes maior que o período na superfície da Terra. A aceleração, devido à gravidade neste planeta, é:</strong></p>
+            <div>
+                <label for="question-3a">
+                    <input type="radio" id="question-3a" name="question-3" value="A">
+                    a) 20 \(m/s^{2}\)
+                </label>
+            </div>
+                
+            <div>
+                <label for="question-3b">
+                    <input type="radio" id="question-3b" name="question-3" value="B">
+                    b) 5 \(m/s^{2}\)
+                </label>
+            </div>
+            <div>
+                <label for="question-3c">
+                    <input type="radio" id="question-3c" name="question-3" value="C">
+                    c) 2,5 \(m/s^{2}\)
+                </label>
+            </div>
+            <div>
+                <label for="question-3d">
+                    <input type="radio" id="question-3d" name="question-3" value="D">
+                    d) 15 \(m/s^{2}\)
+                </label>
+            </div>
+        </div><!--end-Q3-->
+    </form>    
+</body>
+</html>
