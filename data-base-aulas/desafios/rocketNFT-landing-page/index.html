@@ -16,42 +16,142 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
-            <nav class="main-grid" id="nav-bar" >
-                <div id="brand-logo"></div>
-                <ul id="menu-list">
-                    <li><a href="#">Comprar NFT</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-                <button id="btn-wallet">                    
-                    <img src="./assets/logo_MetaMask.svg" alt="" href="./dormir.html">
-                    Dormir agora</button>                              
-            </nav>
-            <div class="main-grid" id="banner">                
-                    
-                <p id="info-box">
-                    Mercado digital para colecionáveis em criptos e tokens não fungível (NFT). 
-                    Compre, venda e descubra ativos digitais exclusivos para você.
-                </p>
-                <span id="avatars">
-                    
-                </span>
-                <h1 id="title-page">Como fazer a <strong id="hg-text">LARYSSA MACIEL</strong> dormir?</h1>
-                <div id="gran-badge">
-                    <img src="./assets/badge.svg" alt="">
+        <header class="container">
+            <!-- header container -->
+            <!-- menu *brand-list-button* -->
+            <div class="menu">
+                <!-- logo -->
+                <div id="brand">
+                    <a href="#">
+                        <img src="./assets/logo.svg" alt="">
+                    </a>
+                
+                <!-- menu navgation -->
                 </div>
+                <nav id="menu-list">
+                    <ul>
+                        <li><a href="#">Comprar NFT</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- button CTA -->
+                <button class="btn-1">Conectar carteira</button>
             </div>
-            <div class="main-grid" id="galery">
-                <img src="./assets/galeria-1.png" alt="">
-                <img src="./assets/galeria-2.png" alt="">
-                <img src="./assets/galeria-3.png" alt="">
-                <img src="./assets/galeria-4.png" alt="">
-                <img src="./assets/galeria-5.png" alt="">
-                <img src="./assets/galeria-6.png" alt="">
-                <img src="./assets/galeria-7.png" alt="">
-                <img src="./assets/galeria-8.png" alt="">
+            <!-- header-banner -->
+            <div class="banner-1">
+                <div id="text-avatars">
+                    <span id="text">
+                        <p>
+                            Mercado digital para colecionáveis em criptos e tokens não fungível (NFT). Compre, venda e descubra ativos digitais exclusivos para você.
+                        </p>
+                    </span>
+                    <div id="avatars">
+                        <img src="./assets/artista-1.png" alt="">
+                        <img src="./assets/artista-2.png" alt="">
+                        <img src="./assets/artista-3.png" alt="">
+                        <img src="./assets/artista-4.png" alt="">
+
+                        <p>
+                            <strong>+10</strong> Artistas selecionados
+                        </p>                        
+                    </div>
+                </div>
+
+                <h1>
+                    Descubra a verdadeira arte digital e colecione diversas <strong>NFTs</strong>
+                </h1>
+
+                <div id="badge">
+                    <img src="./assets/badge.svg" alt="">
+                </div>                   
             </div>
-        </header>  
+            <!-- galery -->
+            <div class="grid-galery">
+                <div><img src="./assets/galeria-1.png" alt=""></div>
+                <div><img src="./assets/galeria-2.png" alt=""></div>
+                <div><img src="./assets/galeria-3.png" alt=""></div>
+                <div><img src="./assets/galeria-4.png" alt=""></div>
+                <div><img src="./assets/galeria-5.png" alt=""></div>
+                <div><img src="./assets/galeria-6.png" alt=""></div>
+                <div> <img src="./assets/galeria-7.png" alt=""></div>
+                <div><img src="./assets/galeria-8.png" alt=""></div>
+                
+                
+                
+                
+                
+                
+               
+                
+            </div>            
+        </header>
+
+       <!--  <main>
+            <section>
+                <aside>
+                    <p>10K+ <br> Artes</p>
+                    <p>200+ <br> Vendas</p>
+                    <p>20 <br> Artistas</p>
+                </aside>
+                <div>
+                    <span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id a  <a href="#">potenti diam</a>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
+
+                            <a href="#">Lorem ipsum</a>
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id a  <a href="#">potenti diam</a>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
+
+                            <a href="#">Lorem ipsum</a>
+                        </p>
+                        
+                    </span>
+                    <div>
+                        <img src="./assets/banner.png" alt="">
+                    </div>                    
+                </div>                
+            </section>
+
+            <section>
+                <h2><span>Populares</span> da semana</h2>
+
+                <div>
+                    <span>Astronauta 1</span>
+                    <span>Mayk Brito</span> <span>1.50 RKT</span>
+                    <span><img src="./assets/arrow-white.svg" alt=""></span>
+                    <img src="./assets/astronauta 1.png" alt="">
+
+                    <span>Astronauta 1</span>
+                    <span>Mayk Brito</span> <span>1.50 RKT</span>
+                    <span><img src="./assets/arrow-white.svg" alt=""></span>
+                    <img src="./assets/astronauta-2.png" alt="">
+                </div>               
+
+                <div class="vl"></div>
+
+                <div>
+                    <span>Astronauta 1</span>
+                    <span>Mayk Brito</span> <span>1.50 RKT</span>
+                    <span><img src="./assets/arrow-white.svg" alt=""></span>
+                    <img src="./assets/astronauta-3.png" alt="">
+
+                    <span>Astronauta 1</span>
+                    <span>Mayk Brito</span> <span>1.50 RKT</span>
+                    <span><img src="./assets/arrow-white.svg" alt=""></span>
+                    <img src="./assets/astronauta-4.png" alt="">
+                </div>                
+            </section>
+
+            <section>
+                <h2>Melhores <span>artistas</span></h2>                
+            </section>
+        </main>
+
+        <footer></footer> -->
+        
     </body>
 </html>

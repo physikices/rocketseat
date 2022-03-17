@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+
 }
 
 /*paleta de cores*/
@@ -15,131 +17,176 @@
     --color-input: #0D0D0D;
 }
 
-/*fonts*/
+html {
+    font-size: 62.5%;
+}
+
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;    
     background-color: var(--body-background);
-    
-}
-
-
-/*****HEADER********/
-header {
-    width: 100%;
-    height: auto;
-    background-image: url(./assets/background.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;       
-}
-.main-grid{
-    width: 88.7%;
-}
-
-#nav-bar {    
-    height: 50px;
-    margin: 57px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#banner {    
-    height: 246px;
-    /* border: blue solid  1px; */
-    margin: 90px auto 0;
-
-}
-
-#galery {    
-    height: 456.4px;
-    border: blueviolet solid 1px;
-    margin: 100px auto 0;
-    
-}
-
-
-/******NAVIGATIOnN-MENU**********/
-#brand-logo{
-    width: 265px;
-    height: 43px;
-    background-image: url(./assets/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-
-
-#menu-list {
-    width: 341px;
-    height: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
     color: var(--text-color);
-    list-style: none;
+    font-size: 1.6rem;  
 }
+
 a {
     text-decoration: none;
-    color: var(--text-color); 
-}
-a:hover {
-    color: var(--color-logo);
-    transition: .3s;
+    color: var(--text-color);
 }
 
-#btn-wallet {
+li {
+    display: inline;
+    margin: 0 60px;
+    font-size: 1.8rem;
+}
+
+/*HEADER*/
+.container {
+    max-width: 1439.56px;
+    max-height: 1000px;
+    margin: 0 auto;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 60px 80px 0px;
+}
+
+/*menu topo*/
+.menu {
+    width: 1277px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.btn-1 {
     width: 230px;
     height: 50px;
-    font-size: .9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .9em;    
+    font-size: 1.6rem;
+    border: none;
+    background-color: var(--subtitle-color);
+    color: var(--text-color);
 }
-button:hover {
+
+.btn-1:hover {
     background-color: var(--color-logo);
-    color: var(--text-color);
-    transition: .4s;
+    transition: .5s;
 }
 
-/*****BANNER*****/
-#banner {
+/*banner-1*/
+.banner-1 {
+    width: 1277px;
+    height: 246px;
+    margin-bottom: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-h1#title-page{
-    color: var(--text-color);
-    width: 596px;
-    margin: 0 auto;
-    font-size: 2.8em;
-}
-#hg-text {
-    color: var(--color-logo);    
+#text-avatars {
+    width: 367px;
+    height: 246px;
 }
 
-#info-box {
+#text {
     width: 401px;
-    height: auto;
-    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 55px;
 }
 
-#galery > img {
-    width:25%;
-}
-
-#galery {
+#avatars {
+    width: 167px;
+    height: 87px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#avatars p {
+   width: 194px;
+   height: 48px;
+   margin: 0 0 0 -230px;
+}
+
+#avatars strong {
+    display: block;
+    width: 194px;
+}
+
+#avatars img {
+    width: 95px;
+}
+
+#avatars img:nth-child(1) {
+    position: relative;    
+    z-index: 3;   
+}
+
+#avatars img:nth-child(2) {
+    position: relative;
+    left: -75px;
+    z-index: 2;   
+}
+
+#avatars img:nth-child(3) {
+    position: relative;
+    left: -155px;
+    z-index: 1;
+}
+
+#avatars img:nth-child(4) {
+    position: relative;
+    left: -235px;
+    z-index: 0;    
+}
+
+.banner-1 h1 {
+    width: 596px;
+    height: 246px;
+    font-size: 5rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.banner-1 h1 > strong {
+    display: block;
+    color: var(--color-logo);
+}
+
+#badge {
+    width: 200px;
+    height: 200px;
+}
+
+/*grid-galery*/
+header > .grid-galery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 55px 16px;
+}
+
+
+
+
+
+
+
+
+/*vertical-line*/
+.vl {
+    border-left: 1px solid var(--subtitle-color);
+    height: 500px;
+    position: relative;
+    left: 50%;
+}
+
+
 
 
   
