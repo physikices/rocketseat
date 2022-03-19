@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header class="container">
-            <!-- header container -->
+        <!-- header container -->
+        <header class="container-header" id="topo">            
             <!-- menu *brand-list-button* -->
             <div class="menu">
                 <!-- logo -->
@@ -32,7 +32,7 @@
                     <ul>
                         <li><a href="#">Comprar NFT</a></li>
                         <li><a href="#">Sobre</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
 
@@ -76,82 +76,233 @@
                 <div><img src="./assets/galeria-5.png" alt=""></div>
                 <div><img src="./assets/galeria-6.png" alt=""></div>
                 <div> <img src="./assets/galeria-7.png" alt=""></div>
-                <div><img src="./assets/galeria-8.png" alt=""></div>
-                
-                
-                
-                
-                
-                
-               
-                
+                <div><img src="./assets/galeria-8.png" alt=""></div>               
             </div>            
         </header>
 
-       <!--  <main>
-            <section>
+        <!-- main container -->
+        <main class="container-main">
+            
+            <article class="banner-2">
                 <aside>
-                    <p>10K+ <br> Artes</p>
-                    <p>200+ <br> Vendas</p>
-                    <p>20 <br> Artistas</p>
+                    <p><strong class="aside-num">10K+</strong> Artes</p>
+                    <p><strong class="aside-num">200+</strong> Vendas</p>
+                    <p><strong class="aside-num">20</strong> Artistas</p>                   
                 </aside>
-                <div>
-                    <span>
+            
+
+                <div class="textsAndBnr-2">
+                    <div class="texts">                        
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id a  <a href="#">potenti diam</a>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
 
-                            <a href="#">Lorem ipsum</a>
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id a  <a href="#">potenti diam</a>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
-
-                            <a href="#">Lorem ipsum</a>
+                            <span>
+                                <a href="#">Lorem ipsum</a>
+                            </span>
                         </p>
                         
-                    </span>
-                    <div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id a  <a href="#">potenti diam</a>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
+
+                            <span>
+                                <a href="#">Lorem ipsum</a>
+                            </span>
+                        </p>
+                        
+                    </div>
+                    
+                    
+                    <div id="img-bnr2">
                         <img src="./assets/banner.png" alt="">
                     </div>                    
                 </div>                
-            </section>
+            </article>            
 
-            <section>
-                <h2><span>Populares</span> da semana</h2>
+            <hr>
+            
+            <section class="cards">
+                <h2 id="sec-title">
+                    <strong>Populares</strong> da semana
+                </h2>
 
-                <div>
-                    <span>Astronauta 1</span>
-                    <span>Mayk Brito</span> <span>1.50 RKT</span>
-                    <span><img src="./assets/arrow-white.svg" alt=""></span>
-                    <img src="./assets/astronauta 1.png" alt="">
+                <div class="box">
+                    <div class="card-1 card">
+                        <div class="icon-arrow">
+                            <h3>Astronauta 1</h3>                       
+                            <img src="./assets/arrow-white.svg" alt="">
+                        </div>
+                        <span class="nome">Mayk Brito</span>
+                        <span class="valor">1.50 RKT</span>
+                        <img src="./assets/astronauta 1.png" alt="">
+                    </div>    
+                    <div class="card-2 card">
+                        <div class="icon-arrow">
+                            <h3>Astronauta 2</h3>                       
+                            <img src="./assets/arrow-white.svg" alt="">
+                        </div>
+                        <span class="nome">Jakeliny Graciely</span>
+                        <span class="valor">2.0 RKT</span>
+                        <img src="./assets/astronauta-2.png" alt="">
+                    </div>
 
-                    <span>Astronauta 1</span>
-                    <span>Mayk Brito</span> <span>1.50 RKT</span>
-                    <span><img src="./assets/arrow-white.svg" alt=""></span>
-                    <img src="./assets/astronauta-2.png" alt="">
-                </div>               
-
-                <div class="vl"></div>
-
-                <div>
-                    <span>Astronauta 1</span>
-                    <span>Mayk Brito</span> <span>1.50 RKT</span>
-                    <span><img src="./assets/arrow-white.svg" alt=""></span>
-                    <img src="./assets/astronauta-3.png" alt="">
-
-                    <span>Astronauta 1</span>
-                    <span>Mayk Brito</span> <span>1.50 RKT</span>
-                    <span><img src="./assets/arrow-white.svg" alt=""></span>
-                    <img src="./assets/astronauta-4.png" alt="">
+                    <div class="vl"></div>
+    
+                    <div class="card-3 card">
+                        <div class="icon-arrow">
+                            <h3>Astronauta 3</h3>                       
+                            <img src="./assets/arrow-white.svg" alt="">
+                        </div>
+                        <span class="nome">João Inácio (Biro)</span>
+                        <span class="valor">3.75 RKT</span>
+                        <img src="./assets/astronauta-3.png" alt="">
+                    </div>    
+                    <div class="card-4 card">
+                        <div class="icon-arrow">
+                            <h3>Astronauta 4</h3>                       
+                            <img src="./assets/arrow-white.svg" alt="">
+                        </div>
+                        <span class="nome">Tamires Santos</span>
+                        <span class="valor">4.30 RKT</span>
+                        <img src="./assets/astronauta-4.png" alt="">
+                    </div>
                 </div>                
             </section>
 
-            <section>
-                <h2>Melhores <span>artistas</span></h2>                
-            </section>
-        </main>
+            <section class="bnr-bottom">
+                <h3>Melhores <strong>artistas</strong></h3>
 
-        <footer></footer> -->
-        
+                <div class="grid-badges">
+                    <div class="mini-card">
+                        <img src="./assets/artista-1.png" alt="">
+                        <span>
+                            <p class="p-1">Mayk Brito</p>
+                            <p class="p-2">80 Fotografias</p>
+                        </span>
+                    </div>
+                    <div class="mini-card">
+                        <img src="./assets/artista-2.png" alt="">
+                        <span>
+                            <p class="p-1">Jakelyne G.</p>
+                            <p class="p-2">99 Fotografias</p>
+                        </span>
+                    </div> 
+                    <div class="mini-card">
+                        <img src="./assets/artista-3.png" alt="">
+                        <span>
+                            <p class="p-1">João I. (Biro)</p>
+                            <p class="p-2">50 Fotografias</p>
+                        </span>
+                    </div> 
+                    <div class="mini-card">
+                        <img src="./assets/artista-4.png" alt="">
+                        <span>
+                            <p class="p-1">Tamires Santos</p>
+                            <p class="p-2">43 Fotografias</p>
+                        </span>
+                    </div> 
+                    <div class="mini-card">
+                        <img src="./assets/artista-5.png" alt="">
+                        <span>
+                            <p class="p-1">Ana Silva</p>
+                            <p class="p-2">28 Fotografias</p>
+                        </span>
+                    </div> 
+                    <div class="mini-card">
+                        <img src="./assets/artista-6.png" alt="">
+                        <span>
+                            <p  class="p-1">Diego F.</p>
+                            <p class="p-2">20 Fotografias</p>
+                        </span>
+                    </div> 
+                                                   
+                </div>
+                
+
+                <a href="#">
+                    <p>Ver todos os artistas</p>
+                    <img src="./assets/arrow-orange.svg" alt="">
+                </a>
+            </section>
+            
+            
+            
+
+            
+
+        </main> 
+
+        <footer class="grid-footer">
+            <div class="ft-top">
+                <div class="logo-ft">
+                    <img src="./assets/logo.svg" alt="">
+                </div>
+                
+                
+                    <a href="#topo">
+                        <span>
+                            <img src="./assets/arrow-black.svg" alt="">
+                        </span>                        
+                    </a>
+                    
+               
+                
+            </div>
+            <div class="ft-left">
+                <div class="call-mail">
+                    <p>Fique por dentro de <strong>todas as novidades</strong></p>
+
+                    <form action="#">
+                        <input id="txt-box" type="email" placeholder="nft@rocketset.com.br">
+                        <input id="btn" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="ft-right">
+                <div class="ft-links">
+                    <div id="links1">
+                        <ul>
+                            <li><a href="#">Empresa</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Time</a></li>
+                            <li><a href="#">Carreira</a></li>                            
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Mapa</a></li>
+                            <li><a href="#">Galeria</a></li>
+                            <li><a href="#">Populares</a></li>
+                            <li><a href="#">Vendas</a></li>
+                            <li><a href="#">Contato</a></li>                            
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Termos</a></li>
+                            <li><a href="#">Política</a></li>
+                            <li><a href="#">Ajuda</a></li>              
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="ft-bottom">
+                <div class="social">
+                    <a href="#">
+                        <p>www.rocktseat.com</p>
+                    </a>
+                    
+                    <span>
+                        <a href="#">
+                            <img src="./assets/instagram.svg" alt="">
+                            <img src="./assets/twitter.svg" alt="">
+                            <img src="./assets/youtube.svg" alt="">
+                        </a>                        
+                    </span>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
