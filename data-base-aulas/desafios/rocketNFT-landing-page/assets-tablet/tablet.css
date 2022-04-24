@@ -1,0 +1,55 @@
+.grid-galery img {
+    width: 20rem;
+}
+
+.banner-1 {
+    flex-direction: column;
+}
+
+.grid-footer {
+    grid-template-areas: 
+        'top top top'
+        'left left left'
+        'right right right'
+        'bottom bottom bottom';
+}
+
+.ft-top,
+.call-mail,
+.ft-right,
+.ft-left {
+    justify-content: center;
+    margin: 0;
+    border-right: none;
+}
+
+.ft-top {
+    justify-content: space-between;
+}
+
+.ft-left {
+    border-bottom: 1px solid var(--subtitle-color);
+}
+.ft-right {
+    width: 100%;
+}
+
+nav {
+    display: none;        
+}
+
+.one,
+.two,
+.three {
+   background-color: var(--text-color);
+   height: 5px;
+   width: 100%;
+   margin: 6px auto; 
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+

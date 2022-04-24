@@ -1,0 +1,292 @@
+/* ============================
+PRESETS
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --box-shadows: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    color: var(--text-color);  
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    line-height: 2.9rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn {
+    width: 86px;
+    padding: 5px;
+    background-color: var(--bg-techs);
+    color: var(--body-bg-color);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* ============================
+GRID - LAYOUT
+=============================== */
+header {
+    width: 100%;
+    max-width: 952px;
+    grid-area: header;
+}
+
+aside {
+    width: 100%;
+    max-width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    grid-area: aside;
+}
+
+main {
+    width: 100%;
+    max-width: 952px;
+    grid-area: main;
+}
+
+footer {
+    width: 100%;
+    max-width: 1360px; 
+    grid-area: footer;
+}
+
+footer > p{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: .3fr 1fr .1fr;
+    grid-template-areas: 
+        "aside header"
+        "aside main"
+        "footer footer";
+    gap: 3rem 6rem;
+}
+/* ============================
+ASSETS
+=============================== */
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--bg-cards);
+    filter: var(--box-shadows);
+    border-radius: 20px;
+    gap: 3.5rem;   
+}
+
+.cards-folder {
+    width: 100%;
+    max-width: 461px;
+    gap: 0;
+}
+
+.cards-folder .title-folder {
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    margin-bottom: 2.2rem;   
+}
+
+.cards .title-folder img {
+    margin-right: 1.6rem;
+}
+
+.cards-folder p {
+    margin-bottom: 3rem;
+}
+
+.cards-folder .icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.badge-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.badge-1 img {
+    margin-right: 1rem;
+}
+
+.badge-1 span {
+    margin-right: 1.5rem;
+}
+
+.badge-2 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.badge-2 .circle {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+}
+/* ============================
+ASIDE-CONTENTS
+=============================== */
+#profile {    
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+#profile img {
+    max-width: 128px;
+    max-height: 128px;
+    border: 2px solid #00FF00;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.social {
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.social li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social li:last-child {
+    margin-bottom: 0px;
+}
+
+#technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;   
+}
+
+#technologies h2 {
+    width: 100%;
+    text-align: start;
+}
+/* ============================
+HEADER-CONTENTS
+=============================== */
+#el-top {
+    flex-direction: row;
+    margin-bottom: 3.1rem;
+}
+
+#el-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ============================
+MAIN-CONTENTS
+=============================== */
+#main-title {
+    flex-direction: row;
+    margin-bottom: 3.1rem;
+}
+
+.post-contents {
+    height: 440px;
+    overflow-y: scroll;
+}
+
+.post {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+
+}
+.post img {
+    width: 128px;
+    border-radius: 50%;
+}
+
+.texts .title-post {
+    margin-bottom: 2.8rem;
+}
+
+
+
+
+
+
+
+
